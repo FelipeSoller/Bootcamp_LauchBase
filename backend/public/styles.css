@@ -93,11 +93,13 @@ header {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 30px;
 }
 
 .card {
-    background-color: #7159c1;      
+    background-color: #7159c1;
+    display: grid; 
+    cursor: pointer;     
 }
 
 .card-image-container img {
@@ -161,4 +163,20 @@ iframe {
     height: 95%;
     position: absolute;
     bottom: 0;
+}
+
+/* FEATURED */
+
+.featured-wrapper.card-image-container {
+    position: relative;
+}
+
+.featured {
+    background: #cf0e0e;
+    color: rgb(255, 255, 255);
+    padding: 2px 8px;
+    position: absolute;
+    right: 5px;
+    border-radius: 16px;
+    top: -10px;
 }

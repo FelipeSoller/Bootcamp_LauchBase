@@ -30,6 +30,20 @@ server.get('/courses', function(require, response) {
     return response.render('courses', { items: videos });
 });
 
+server.get('/video', function(require, response) {
+    const id = require.query.id;
+
+    const video = videos.find(function(video) {       
+        return video.id == id;        
+    });
+
+    if (!video) {
+        return response.send('Video not found!')
+    }    
+
+    return response.render('video', { item: video })
+});
+
 
 server.listen(3000, function() {
     console.log('server is running');

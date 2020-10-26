@@ -75,10 +75,15 @@ header {
     line-height: 34px;    
 }
 
+#footer {
+    margin-top: 15px;
+}
+
 #footer a:hover {
     color: #89b8e7;
     transition: color 0.2s;
     border-bottom: 2px solid #89b8e7;
+    margin-top: 50px;
 }
 
 /* CARDS */
@@ -92,7 +97,7 @@ header {
 }
 
 .card {
-    background-color: #7159c1;
+    background-color: #7159c1;      
 }
 
 .card-image-container img {
@@ -102,6 +107,8 @@ header {
 .card-content,
 .card-info {
     padding: 24px;
+    align-items: center;
+    display: grid;  
 }
 
 .card-info {
